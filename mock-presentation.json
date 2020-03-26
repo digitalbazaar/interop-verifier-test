@@ -1,0 +1,65 @@
+{
+  "options": {
+    "challenge": "acdbba77-9b5f-4079-887b-97e7eda06081",
+    "checks": [
+      "proof"
+    ]
+  },
+  "presentation": {
+    "@context": [
+      "https://www.w3.org/2018/credentials/v1"
+    ],
+    "type": [
+      "VerifiablePresentation"
+    ],
+    "verifiableCredential": [
+      {
+        "@context": [
+          "https://www.w3.org/2018/credentials/v1",
+          {
+            "ex": "https://example.org/examples#",
+            "schema": "http://schema.org/",
+            "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "BachelorDegree": "ex:BachelorDegree",
+            "UniversityDegreeCredential": "ex:UniversityDegreeCredential",
+            "degree": "ex:degree",
+            "name": {
+              "@id": "schema:name",
+              "@type": "rdf:HTML"
+            }
+          }
+        ],
+        "id": "http://example.gov/credentials/3732",
+        "type": [
+          "VerifiableCredential",
+          "UniversityDegreeCredential"
+        ],
+        "issuer": "did:key:z6Mkg9AkjefxdJFSphkStzXwHQnbweN43mCqA37aANGRxF1o",
+        "issuanceDate": "2020-03-11T23:09:06.803Z",
+        "credentialSubject": {
+          "id": "did:example:ebfeb1f712ebc6f1c276e12ec21",
+          "degree": {
+            "type": "BachelorDegree",
+            "name": "Bachelor of Science and Arts"
+          }
+        },
+        "proof": {
+          "type": "Ed25519Signature2018",
+          "created": "2020-03-25T18:56:18Z",
+          "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..aRsTBWPUeEQRcfDRXSl6VQkffr5EWuZikZb8ChhIUniF6kminnyupdFbfIFc8-S79urA0uNHKcOEIq0TJO7cAA",
+          "proofPurpose": "assertionMethod",
+          "verificationMethod": "did:key:z6Mkg9AkjefxdJFSphkStzXwHQnbweN43mCqA37aANGRxF1o#z6Mkg9AkjefxdJFSphkStzXwHQnbweN43mCqA37aANGRxF1o"
+        }
+      }
+    ],
+    "id": "urn:uuid:3e793029-d699-4096-8e74-5ebd956c3137",
+    "proof": {
+      "type": "Ed25519Signature2018",
+      "created": "2020-03-26T15:36:23Z",
+      "challenge": "acdbba77-9b5f-4079-887b-97e7eda06081",
+      "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..Udco4091GP2NO12jzYvX4AplGek1c4isqvYlh-g7ZOcwW-tmWdON-5twBozjHPEIFzGO66sOZDh8V1PebmYNAg",
+      "proofPurpose": "authentication",
+      "verificationMethod": "did:key:z6MkuYgznD8CjSEVkH7YzLE2kX5uppvb85Qu1BJvsRuEHnDF#z6MkuYgznD8CjSEVkH7YzLE2kX5uppvb85Qu1BJvsRuEHnDF"
+    }
+  }
+}
